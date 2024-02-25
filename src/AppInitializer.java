@@ -56,6 +56,7 @@ public class AppInitializer {
         for (Customer customer: customerList){
             System.out.println(customer);
         }
+
 //
 //
 //        //3.update
