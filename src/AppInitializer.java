@@ -1,6 +1,7 @@
 import embedded.MobileNumber;
 import embedded.Nameidentifire;
 import entity.Customer;
+import entity.Order;
 import repository.CustomerRepository;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class AppInitializer {
 //        System.out.println("Existing Customer:" + existCustomer.toString());
 //        getSession.close();
 
-        customerRepository = new CustomerRepository();
+     /*   customerRepository = new CustomerRepository();
         Customer customer = customerRepository.getCustomer(1);
         System.out.println(customer);
 
@@ -43,8 +44,13 @@ public class AppInitializer {
         List<Customer> allCustomerJPQL =customerRepository2.getAllCustomerJPQL();
         for(Customer customer1 : allCustomerJPQL){
             System.out.println(customer1);
+        }*/
+        CustomerRepository customerRepository3=new CustomerRepository();
+        List<Order>orderList = customerRepository3.getOrdersByCustomerId(1);
+        for (Order order: orderList)
+        {
+            System.out.println(order);
         }
-
 //
 //
 //        //3.update
