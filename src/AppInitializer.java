@@ -22,8 +22,8 @@ public class AppInitializer {
 //        transaction.commit();
 //        session.close();
 
-        CustomerRepository customerRepository =new CustomerRepository();
-        customerRepository.saveCustomer(getCustomer());
+//        CustomerRepository customerRepository =new CustomerRepository();
+//        customerRepository.saveCustomer(getCustomer());
 
 
 //        //2.get
@@ -50,6 +50,11 @@ public class AppInitializer {
         for (Order order: orderList)
         {
             System.out.println(order);
+        }
+        CustomerRepository customerRepository = new CustomerRepository();
+        List<Customer> customerList=customerRepository.getAllCustomerJPQL();
+        for (Customer customer: customerList){
+            System.out.println(customer);
         }
 //
 //
