@@ -49,7 +49,7 @@ public class AppInitializer {
         List<Order>orderList = customerRepository3.getOrdersByCustomerId(1);
         for (Order order: orderList)
         {
-            System.out.println(order);
+
         }
         CustomerRepository customerRepository = new CustomerRepository();
         List<Customer> customerList=customerRepository.getAllCustomerJPQL();
