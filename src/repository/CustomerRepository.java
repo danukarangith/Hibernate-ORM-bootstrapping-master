@@ -115,8 +115,5 @@ public class CustomerRepository {
 
     }
 
-    public List<CustomerProjection> getCustomerProjection() {
-        List<CustomerProjection> CustomerProjection;
-        return CustomerProjection;
-    }
+
 }
