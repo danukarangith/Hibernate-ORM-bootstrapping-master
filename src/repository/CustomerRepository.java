@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
 import org.hibernate.query.Query;
+import projection.CustomerProjection;
 
 import java.lang.annotation.Native;
 import java.util.List;
@@ -112,5 +113,10 @@ public class CustomerRepository {
         return list;
 
 
+    }
+
+    public List<CustomerProjection> getCustomerProjection() {
+        List<CustomerProjection> CustomerProjection;
+        return CustomerProjection;
     }
 }
